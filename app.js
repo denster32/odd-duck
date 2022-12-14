@@ -127,7 +127,7 @@ function renderChart(){
       plugins: {
         title: {
           display: true,
-          text: 'Custom Chart Title',
+          text: 'Scatter Chart',
           padding: {
             top: 10,
             bottom: 30
@@ -152,6 +152,16 @@ function renderChart(){
       }]
     },
     options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'Percent Product was Chosen',
+          padding: {
+            top: 10,
+            bottom: 30
+          }
+        }
+      },
       scales: {
         y: {
           beginAtZero: true
@@ -185,8 +195,8 @@ function handleShowResults(){
   if(votingRounds === 0){
     renderChart();
 
+  }
 }
-
 // ***** EXECUTABLE CODE *****
 let bag = new Product('bag');
 let banana = new Product('banana');
