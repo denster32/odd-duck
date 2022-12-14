@@ -184,18 +184,7 @@ function handleClick(event){
 function handleShowResults(){
   if(votingRounds === 0){
     renderChart();
-  }
 
-  // if(votingRounds === 0){
-  //   for(let i = 0; i < productArray.length; i++){
-  //     let liElem = document.createElement('li');
-  //     let percent = Math.round((productArray[i].votes / productArray[i].views) * 100);
-  //     console.log(percent);
-  //     liElem.textContent = `${productArray[i].name} had ${productArray[i].votes} vote(s) and was seen ${productArray[i].views} times. It was selected ${percent}% of the time when shown.`;
-  //     resultsList.appendChild(liElem);
-  //   }
-  //   resultsBtn.removeEventListener('click', handleShowResults);
-  // }
 }
 
 // ***** EXECUTABLE CODE *****
